@@ -8,7 +8,7 @@ public class Game {
 
         while (!end) {
             Player player = new Player();
-            Turtorial tutorial = new Turtorial();
+            Tutorial tutorial = new Tutorial();
             Intro intro = new Intro();
             String realName = intro.playerName();
             int playerExecuteRound = intro.playerRounds();
@@ -47,13 +47,13 @@ public class Game {
                     playerWin++;
                 }
 
-                if (playerMove  == 3 && pcMove == 3) {
+                if (playerMove == 3 && pcMove == 3) {
                     System.out.println(realName + " chose SCISSORS!\n" + "Computer chose also SCISSORS! \n" + " TIE!");
                     tie++;
                 } else if (playerMove == 3 && pcMove == 1) {
                     System.out.println(realName + " chose SCISSORS!\n" + "Computer chose ROCK!\n" + "LOST");
                     pcWin++;
-                } else if (playerMove == 3 && pcMove== 2) {
+                } else if (playerMove == 3 && pcMove == 2) {
                     System.out.println(realName + " chose SCISSORS!\n" + "Computer chose PAPER!\n" + "WIN");
                     playerWin++;
                 }
@@ -71,11 +71,8 @@ public class Game {
                 System.out.println(realName + "\nYou've  lost!");
             } else System.out.println("You've both tied!");
 
-           // player.endgame();
-
-
-
             end = true;
+            player.endgameChoice();
         }
     }
 }
