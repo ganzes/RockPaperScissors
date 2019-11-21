@@ -14,7 +14,11 @@ public class Player {
     public int humanMove(){
         Scanner playersChoices = new Scanner(System.in);
         int playerRockPaperScissors = playersChoices.nextInt();
+
+        /*if (playerRockPaperScissors != (1|2|3)){
+            System.out.println("Wrong number, try again: 1, 2, 3?");
+        }*/
+
         return playerRockPaperScissors;
     }
-
 }
