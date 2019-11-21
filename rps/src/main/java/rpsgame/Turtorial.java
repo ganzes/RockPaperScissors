@@ -2,8 +2,8 @@ package rpsgame;
 
 public class Turtorial {
 
-    public void turtorialInfo(){
-        System.out.println("Turtorial:\n" +
+    public void tutorialInfo(){
+        System.out.println("Tutorial:\n" +
                 "keyboard button  1 - rock,\n" +
                 "keyboard button  2 - paper,\n" +
                 "keyboard button  3 - scissors,\n" +

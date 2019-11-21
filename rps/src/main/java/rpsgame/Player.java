@@ -21,4 +21,18 @@ public class Player {
 
         return playerRockPaperScissors;
     }
+
+    public void endgame(){
+        System.out.println("Press X to QUIT or N to start New Game!");
+        Scanner endGame = new Scanner(System.in);
+        String result = endGame.next();
+
+        if (result == "X"){
+            System.out.println("BYE!");
+        } else if(result == "N"){
+            System.out.println("Starting NEW GAME!");
+            Game game = new Game();
+            game.newGame();
+        }
+    }
 }
